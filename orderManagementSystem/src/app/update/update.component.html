@@ -1,0 +1,108 @@
+<!-- <div class="container">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Order Number</label>
+      <input type="number" class="form-control" placeholder="Enter number" />
+    </div>
+    <div class="form-group">
+      <label for="exampleDate">Order Due Date</label>
+      <input
+        type="date"
+        class="form-control"
+        placeholder="Enter number"
+        placeholder="Enter number"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleName">Customer Name</label>
+      <input type="name" class="form-control" placeholder="Enter name" />
+    </div>
+    <div class="form-group">
+      <label for="exampleAddress"> Customer Address</label>
+      <input type="address" class="form-control" placeholder="Enter address" />
+    </div>
+    <div class="form-group">
+      <label for="examplePhone">Customer Phone</label>
+      <input type="phone" class="form-control" placeholder="Enter number" />
+    </div>
+    <div class="form-group">
+      <label for="exampleTotal">Order Total</label>
+      <input type="total" class="form-control" placeholder="Enter total" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="onAddUser()">
+      Update
+    </button>
+  </form>
+</div> -->
+<div
+  *ngIf="alert"
+  class="alert alert-success alert-dismissble fade show"
+  role="alert"
+>
+  <strong>Success !</strong> Your Data updated successfully !
+  <button
+    (click)="closeAlert()"
+    type="button"
+    class="close"
+    data-dismiss="alert"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form [formGroup]="editOrders" (ngSubmit)="updateOrder()">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <form>
+          <div class="row">
+            <div class="col-sm-5 form-group">
+              <label for="name">Number</label>
+              <input type="number" id="name" class="form-control" #nameInput />
+            </div>
+            <div class="col-sm-2 form-group">
+              <label for="amount">Due Date</label>
+              <input
+                type="date"
+                id="amount"
+                class="form-control"
+                #amountInput
+              />
+            </div>
+            <div class="col-sm-2 form-group">
+              <label for="amount">Name</label>
+              <input
+                type="name"
+                id="amount"
+                class="form-control"
+                #amountInput
+              />
+            </div>
+            <div class="col-sm-2 form-group">
+              <label for="amount">Address</label>
+              <input
+                type="text"
+                id="amount"
+                class="form-control"
+                #amountInput
+              />
+            </div>
+            <div class="col-sm-2 form-group">
+              <label for="amount">Phone</label>
+              <input id="amount" class="form-control" #amountInput />
+            </div>
+            <div class="col-sm-2 form-group">
+              <label for="amount">Total</label>
+              <input id="amount" class="form-control" #amountInput />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <button class="btn btn-success" type="submit">Update</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</form>

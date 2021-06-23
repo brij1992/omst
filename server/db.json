@@ -1,0 +1,62 @@
+{
+  "Order": [
+    {
+      "OrderNumber": 1,
+      "OrderDueDate": "26/12/2020",
+      "CustomerName": "Otto",
+      "CustomerAddress": "Hyderabad",
+      "CustomerPhone": "8896451287",
+      "OrderTotal": "89"
+    },
+    {
+      "OrderNumber": 2,
+      "OrderDueDate": "26/12/202",
+      "CustomerName": "John",
+      "CustomerAddress": "Secunderabad",
+      "CustomerPhone": "889955661",
+      "OrderTotal": "56"
+    },
+    {
+      "OrderNumber": 3,
+      "OrderDueDate": "26/1/2020",
+      "CustomerName": "Smith",
+      "CustomerAddress": "Nagpur",
+      "CustomerPhone": "7894456123",
+      "OrderTotal": "22"
+    },
+    {
+      "OrderNumber": 4,
+      "OrderDueDate": "2/12/2020",
+      "CustomerName": "James",
+      "CustomerAddress": "pune",
+      "CustomerPhone": "8569741234",
+      "OrderTotal": "99"
+    },
+    {
+      "OrderNumber": 5,
+      "OrderDueDate": "6/12/2021",
+      "CustomerName": "David",
+      "CustomerAddress": "Gujarat",
+      "CustomerPhone": "9955667894",
+      "OrderTotal": "12"
+    },
+    {
+      "OrderNumber": 6,
+      "OrderDueDate": "23/12/2021",
+      "CustomerName": "Rohney",
+      "CustomerAddress": "Delhi",
+      "CustomerPhone": "7799561248",
+      "OrderTotal": "24"
+    }
+  ],
+  "createUser": [
+    {
+      "OrderNumber": 6,
+      "OrderDueDate": "23/12/2021",
+      "CustomerName": "Rohney",
+      "CustomerAddress": "Delhi",
+      "CustomerPhone": "7799561248",
+      "OrderTotal": "24"
+    }
+  ]
+}

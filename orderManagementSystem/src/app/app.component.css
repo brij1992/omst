@@ -1,0 +1,6 @@
+body {
+  background-color: aliceblue;
+}
+.nav navbar-nav {
+  float: right;
+}

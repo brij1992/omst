@@ -1,0 +1,36 @@
+<div class="container"></div>
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Order Number</th>
+      <th scope="col">Order Due Date</th>
+      <th scope="col">Customer Name</th>
+      <th scope="col">Customer Address</th>
+      <th scope="col">Customer Phone</th>
+      <th scope="col">Order Total</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let order of collection">
+      <!-- <ng-container *ngIf="tmp != order.OrderNumber; else abc"> -->
+      <td>{{ order.OrderNumber }}</td>
+      <td>{{ order.OrderDueDate }}</td>
+      <td>{{ order.CustomerName }}</td>
+      <td>{{ order.CustomerAddress }}</td>
+      <td>{{ order.CustomerPhone }}</td>
+      <td>{{ order.OrderTotal }}</td>
+      <td>
+        <a routerLink="/update/{{ order.OrderNumber }}">
+          <i class="fa fa-edit" style="font-size: 30px"></i
+        ></a>
+        &nbsp; &nbsp;<i
+          class="fa fa-trash"
+          style="font-size: 30px; color: red"
+        ></i>
+      </td>
+      <!-- </ng-container> -->
+    </tr>
+  </tbody>
+</table>
